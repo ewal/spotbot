@@ -21,8 +21,18 @@ A Spotify player with a Firebase integration. Perfect for an office where everyo
 SPOTIFY_USERNAME=xxx
 SPOTIFY_PASSWORD=yyy
 SERVER_PORT=3030
-FIREBASE_URI=https://xxxx.firebaseio.com
+FIREBASE_API_KEY=[KEY]
+FIREBASE_AUTH_DOMAIN=[DOMAIN]
+FIREBASE_DATABASE_URL=[DATABASE_URL]
+FIREBASE_STORAGE_BUCKET=[BUCKET_URL]
 ```
+
+### Upgrading Firebase from v2 to v3
+Follow the [migration guide](https://firebase.google.com/support/guides/firebase-web#import_your_project_to_the_firebase_console_numbered)
+
+### Firebase storage bucket
+Create a new Firebase `Service Account` and save the JSON file to the
+root of your project with the name `firebase-service-account.json`.
 
 ### Optional Last.fm scrobbling
 Enable scrobbling to Last.fm by setting the following environment variables.
